@@ -1,5 +1,11 @@
 .Header{
-    width: 100%;
+    width: 30%;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 1000;
+    border-right: 0.1rem solid $color-Gray-Light;
+
+    .Header-nav{
     background: $Background-color;
     padding: 0.8rem 1.2rem;
     display: flex;
@@ -16,11 +22,57 @@
 
     .Header-btn{
         display: flex;
-        column-gap: 2rem;
+        column-gap: 2.5rem;
 
         button{
             color: $color-Text;
             cursor: pointer;
+            
+        }
+    }
+    }
+
+    .Header-container{
+        display: flex;
+        align-items: center;
+        column-gap: 2rem;
+        padding: .8rem 1.5rem;
+
+        form{
+            background: $Background-color;
+            width: 90%;
+            border-radius: .8rem;
+            display: flex;
+            align-items: center;
+           justify-content: center;
+            overflow: hidden;
+            .Form-Search{
+                width: 10%;
+                button{
+                   
+                    color:$color-Text;
+                    padding:.8rem  1.5rem;
+                    cursor: pointer;
+                }
+            }
+            input{
+                padding:.8rem 1.5rem;
+                
+                width: 90%;
+                font-size: 1.4rem;
+                color:$color-Text;
+                
+
+            }
+        }
+
+        .Header-filter{
+
+            button{
+
+                color: $color-Text;
+                cursor: pointer;
+            }
         }
     }
 }
