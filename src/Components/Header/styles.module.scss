@@ -1,0 +1,26 @@
+.Header{
+    width: 100%;
+    background: $Background-color;
+    padding: 0.8rem 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .Header-img{
+        width: 10%;
+        clip-path: circle();
+        cursor: pointer;
+        img{
+            max-width: 100%;
+        }
+    }
+
+    .Header-btn{
+        display: flex;
+        column-gap: 2rem;
+
+        button{
+            color: $color-Text;
+            cursor: pointer;
+        }
+    }
+}

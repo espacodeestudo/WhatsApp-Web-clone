@@ -1,11 +1,8 @@
-import P from "prop-types";
 
-export const Cards = ({children}) => {
+
+export const Cards = () => {
   return (
-    <div>{children}</div>
+    <div></div>
   )
 }
 
-Cards.propTypes={
-  children : P.node
-}
